@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3">
+<parameter name="author" value="Humayun"/>
+<parameter name="searchKey" value="USA"/>
+  <test name="Test">
+  <parameter name="searchKey" value="BD"/>
+    <classes>
+      <class name="SeleniumExcercise.DataProviderExample"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="963" started-at="2015-12-14T04:52:50Z" finished-at="2015-12-14T04:52:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="963" started-at="2015-12-14T04:52:50Z" finished-at="2015-12-14T04:52:51Z">
+      <class name="TestWebElement">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:TestWebElement@d041cf]" name="setUP" is-config="true" duration-ms="21828" started-at="2015-12-13T23:52:29Z" finished-at="2015-12-13T23:52:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="testWeb()[pri:0, instance:TestWebElement@d041cf]" name="testWeb" duration-ms="950" started-at="2015-12-13T23:52:50Z" finished-at="2015-12-13T23:52:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWeb -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestWebElement@d041cf]" name="tearDown" is-config="true" duration-ms="0" started-at="2015-12-13T23:52:51Z" finished-at="2015-12-13T23:52:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestWebElement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
