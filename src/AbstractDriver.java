@@ -1,6 +1,9 @@
+import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -17,8 +20,11 @@ public class AbstractDriver {
 	
 	@BeforeSuite
 	public void setUP(){
-		
-		driver = new FirefoxDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-extensions");
+		System.setProperty("webdriver.chrome.driver", new File("chromedriver32").getAbsolutePath()+"/chromedriver.exe");
+		driver = new ChromeDriver(options);
+		//driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to(twc);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
