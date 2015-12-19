@@ -26,7 +26,7 @@ public class AbstractDriver {
 		driver = new ChromeDriver(options);
 		//driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to(twc);
+		driver.navigate().to(facebook);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
