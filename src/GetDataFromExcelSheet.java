@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class GetDataFromExcelSheet {
 	/*
-	 * This program retrive data from excel sheet and print the value
+	 * This program retrieve data from excel sheet and print the value
 	 * on the Console
 	 * 
 	 * Library files need to add:
