@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3" verbose="2">
+
+ <test name="ChromeTest">
+  <parameter name="browser" value="chrome"/>
+   <parameter name="flatform" value="ubuntu"/>
+    <classes>
+      <class name="testCases.VerifyFacebookTitle"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="FirefoxTest">
+  <parameter name="browser" value="firefox"/>
+   <parameter name="flatform" value="xp"/>
+    <classes>
+      <class name="testCases.VerifyFacebookTitle"/>
+    </classes>
+  </test> <!-- Test -->
+   
+  <test name="IETest">
+  <parameter name="browser" value="ie"/>
+  <parameter name="flatform" value="windows"/>
+    <classes>
+      <class name="testCases.VerifyFacebookTitle"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
